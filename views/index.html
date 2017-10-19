@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Backend Challenges | Free Code Camp</title>
+    <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link href="/public/style.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Request Header Parser Microservice</h1>
+      <h3>Part 3 of Free Code Camp Backend Challenges</h3>
+      <ol>
+        <li>User Story: I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</li>
+        <li>User Story: If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.</li>
+        <li>User Story: When I visit that shortened URL, it will redirect me to my original link.</li>
+      </ol>
+
+      <h3>Example use</h3>
+      <ul>
+        <li><code>https://&lt;host&gt;/new/http://www.website.com</code></li>
+      </ul>
+      <h3>Example response</h3>
+      <ul>
+        <li><code>{ "original_url":"http://www.website.com", "short_url":"https://&lt;host&gt;/123" }</code></li>
+      </ul>
+      <p>Going to the <code>short_url</code> will redirect to the <code>original_url</code></p>
+      
+    </div>
+  </body>
+
+</html>

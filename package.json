@@ -1,0 +1,19 @@
+{
+  "name": "url-shortener-microservice",
+  "dependencies": {
+    "express": "^4.16.2",
+    "valid-url": "^1.0.9",
+    "mongodb": "^2.2.33"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "4.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sja31dev/timestamp-microservice.git"
+  }
+}
