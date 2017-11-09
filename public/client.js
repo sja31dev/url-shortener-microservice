@@ -2,8 +2,12 @@
 /*global $, jQuery, alert*/
 
 function shortUrlResponse(data) {
-  $('#shortened-url').html(data.short_url);
-  $('#shortened-url').attr('href', data.short_url);
+  if (data.error) {
+    alert("Error: " + data.error);
+  } else {
+    $('#shortened-url').html(data.short_url);
+    $('#shortened-url').attr('href', data.short_url);
+  }
 }
 
 function getShortUrl(urlToShorten) {
